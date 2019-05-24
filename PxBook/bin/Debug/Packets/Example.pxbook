@@ -1,0 +1,25 @@
+// IF CONDITION! 
+// read byte and save it at A
+byte A
+if A == 1 
+    // read byte and override at A
+   byte A 
+   byte B 
+   if A > 0 
+       // do something?
+      if A <= B 
+       // and.. ?
+   endif 
+   endif 
+endif 
+// FOR CONDITION! 
+byte n 
+for n 
+   ascii  name 
+   ulong  exp 
+endfor 
+// WHILE CONDITION! 
+while byte == 1 
+    uint32 refID 
+    uint8 flag 
+endwhile  

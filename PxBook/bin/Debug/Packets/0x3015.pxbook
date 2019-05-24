@@ -1,0 +1,120 @@
+/// SERVER_AGENT_SINGLE_SPAWN
+uint refObjID
+byte ID1
+byte ID2
+byte ID3
+byte ID4
+if ID1 == 1
+    // BIONIC:
+    // - CHARACTER
+    // - NPC
+    //   - NPC_FORTRESS_STRUCT
+    //   - NPC_MOB
+    //   - NPC_COS
+    //   - NPC_FORTRESS_COS
+    if ID2 == 1
+        // CHARACTER
+        byte Scale
+        byte BerserkLevel
+        byte PVPCape
+        byte ExpType
+        byte inventorySize
+        for byte
+            uint refItemjID
+            byte ID1
+            byte ID2
+            byte ID3
+            byte ID4
+            if ID1 == 3
+                if ID2 == 1
+                    byte ItemOptLevel
+                endif
+            endif
+        endfor
+        byte avatarInventorySize
+        for byte
+            uint refAvatarItemID
+            byte aID1
+            byte aID2
+            byte aID3
+            byte aID4
+            if aID1 == 3
+                if aID2 == 1
+                    byte ItemOptLevel
+                endif
+            endif
+        endfor
+    endif
+    byte hasMask
+    if hasMask == 1
+        // bla bla bla..
+    endif
+endif
+// Position
+uint UniqueID
+ushort Region
+single X
+single Y
+single Z
+ushort Angle
+// Movement
+byte hasDestination
+byte movementType
+if hasDestination == 1
+    ushort DestinationRegion
+    if Region < 32767
+        // World
+        ushort DestinationX
+        ushort DestinationY
+        ushort DestinationZ
+    endif
+    if Region >= 32767
+        // Dungeon
+        uint DestinationX
+        uint DestinationY
+        uint DestinationZ
+    endif
+endif
+byte LifeState
+byte unkByte3
+byte motionState
+byte Status
+single WalkSpeed
+single RunSpeed
+single BerserkSpeed
+// Buffs
+for byte
+    uint BuffID
+    uint Duration
+endfor
+if ID2 == 1
+    ascii Name
+    byte JobType
+    byte JobLevel
+    byte PVPState
+    byte hasMount
+    byte isFighting
+    if hasMount == 1
+        //
+    endif
+    byte scrollMode
+    byte InteractMode
+    byte unkByte4
+    ascii GuildName
+    // if no containsJobEquipment ? (false)
+    if 1 == 1
+        uint GuildID
+        ascii GuildMemberName
+        uint GuildLastRev
+        uint UnionID
+        uint UnionLastRev
+        byte isFriendly
+        byte GuildMemberSiegeAuthority
+    endif
+    byte EquipmentCooldown
+    byte PKFlag
+endif
+if ID1 == 1
+    byte unkByte6
+endif
+

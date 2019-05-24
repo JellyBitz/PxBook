@@ -1,0 +1,3 @@
+/// SERVER_GROUPSPAWN_BEGIN
+byte spawnType
+ushort spawnCount

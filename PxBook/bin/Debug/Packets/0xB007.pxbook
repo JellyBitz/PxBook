@@ -1,0 +1,41 @@
+/// SERVER_AGENT_CHARACTER_SELECTION_RESPONSE
+byte action
+byte result
+if result  == 1
+  byte count
+  for count
+    uint model
+    ascii name
+    byte scale
+    byte level
+    ulong exp
+    ushort str
+    ushort int
+    ushort stats
+    uint hp
+    uint mp
+    byte isDeleting
+    if isDeleting == 1
+      uint deletingTime
+    endif
+    byte guildMemberClass
+    byte isGuildRenameRequired
+    if isGuildRenameRequired == 1
+      ascii guildName
+    endif
+    byte academyMemberClass
+    byte itemCount
+    for itemCount
+        uint refItemID
+        byte plus
+     endfor
+     byte itemAvatarCount
+     for itemAvatarCount
+        uint avatarRefItemID
+        byte avatarPlus
+    endfor
+  endfor
+endif
+if result == 2
+  ushort errorCode
+endif

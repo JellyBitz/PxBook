@@ -1,0 +1,38 @@
+/// SERVER_GATEWAY_LOGIN_RESPONSE
+byte result
+IF result == 1
+    // Sucess
+    uint connectionID
+    ascii agentHost
+    ushort agentPort
+ENDIF
+IF result == 2
+    // Error
+    byte errorCode
+    IF errorCode == 1
+        // Wrong password
+        uint maxAttempts
+        uint attempts
+    ENDIF
+    IF errorCode == 2
+        IF byte == 1
+            // Blocked
+            ascii blockedReason
+            ushort endYear
+            ushort endMonth
+            ushort endDay
+            ushort endHour
+            ushort endMinute
+            ushort endSecond
+        ENDIF
+    ENDIF
+    IF errorCode == 3
+        // User already connected
+    ENDIF
+    IF errorCode == 5
+        // Server full
+    ENDIF
+    IF errorCode == 11
+        // IP limit reached
+    ENDIF
+ENDIF

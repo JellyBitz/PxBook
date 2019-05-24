@@ -1,0 +1,11 @@
+/// Division Info (Locale & Gateway Host)
+byte localeID
+FOR byte
+    ascii32 DivisionName
+    byte null
+    byte gatewayCount
+   for gatewayCount[0]
+    ascii32 host
+    byte null
+endfor
+ENDFOR

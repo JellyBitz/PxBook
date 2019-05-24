@@ -1,0 +1,50 @@
+/// CLIENT_AGENT_INVENTORY_MOVEMENT
+byte sucess
+IF sucess == 1
+    // Movement type
+    byte type
+    IF type == 0
+        // From Inventory to Inventory
+        byte slotFrom
+        byte slotTo
+        ushort quantity
+    ENDIF
+    IF type == 1
+        // From Storage to Storage
+    ENDIF
+    IF type == 2
+        // From Inventory to Storage
+    ENDIF
+    IF type == 3
+        // From Storage To Inventory
+    ENDIF
+    IF type == 6
+        // From Ground To Inventory
+    ENDIF
+    IF type == 8
+        // From Shop To Inventory
+byte tab
+byte slot
+byte quantity
+if quantity == 1
+byte inventorySlot
+ushort amount
+endif
+if quantity != 1
+for quantity
+byte inventorySlot
+endif
+    ENDIF
+    IF type == 9
+        // From Inventory To Shop
+    ENDIF
+    IF type == 10
+        // From Pet to Pet
+    ENDIF
+    IF type == 26
+        // From Pet To Inventory
+    ENDIF
+    IF type == 27
+        // From Inventory To Pet
+    ENDIF
+ENDIF

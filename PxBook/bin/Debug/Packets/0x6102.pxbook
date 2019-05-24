@@ -1,0 +1,6 @@
+/// CLIENT_LOGIN_REQUEST
+// [Encrypted]
+byte queueID
+ascii username
+ASCII password
+ushort serverID

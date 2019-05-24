@@ -1,0 +1,161 @@
+/// SERVER_AGENT_CHARACTER_DATA
+uint ServerTime
+uint model
+byte scale
+byte level
+byte levelMax
+ulong exp
+uint expSP
+ulong gold
+uint SP
+ushort statPoints
+byte berserkPoints
+uint expGathered
+uint HPMax
+uint MPMax
+byte expIcon
+byte PKDaily
+ushort PKTotal
+uint PKPenalty
+byte berserkLevel
+byte PVPCape
+byte inventorySize
+FOR byte
+    byte itemSlot
+    uint rentType
+    IF rentType == 1
+        ushort rentInfoCanDelete
+        uint rentInfoPeriodBeginTime
+        uint rentInfoPeriodEndTime
+    ENDIF
+    IF rentType == 2
+        ushort rentInfoCanDelete
+        ushort rentInfoCanRecharge
+        uint rentInfoMeterRateTime
+    ENDIF
+    IF rentType == 3
+        ushort rentInfoCanDelete
+        ushort rentInfoCanRecharge
+        uint rentInfoPeriodBeginTime
+        uint rentInfoPeriodEndTime
+        uint rentInfoPackingTime
+    ENDIF
+    uint refItemID
+    // ID's added manually to hexdump
+    byte ID1
+    byte ID2
+    byte ID3
+    byte ID4
+    IF ID1 == 3
+        // ITEM_
+        IF ID2 == 1
+            // ITEM_CH_
+            // ITEM_EU_
+            // ITEM_AVATAR
+            byte itemLevel
+            ulong itemVariance
+            uint itemDurability
+            FOR byte
+                uint magParam01
+                uint magParam02
+            ENDFOR
+            byte bindingType
+            FOR byte
+                byte bindOption01
+                uint bindOption02
+                uint bindOption03
+            ENDFOR
+            byte bindingType_
+            FOR byte
+                byte bindOption01_
+                uint bindOption02_
+                uint bindOption03_
+            ENDFOR
+        ENDIF
+        IF ID2 == 2
+            // ITEM_COS
+            IF ID3 == 1
+                // ITEM_COS_P
+                byte petState
+                IF petState == 2
+                    // Summoned
+                    uint refObjID
+                    ascii petName
+                    IF ID4 == 2
+                        // ITEM_COS_P (Ability)
+                        uint petRentEndTime
+                    ENDIF
+                    byte unkByte
+                ENDIF
+                IF petState == 3
+                    // Alive
+                    uint refObjID
+                    ascii petName
+                    IF ID4 == 2
+                        // ITEM_COS_P (Ability)
+                        uint petRentEndTime
+                    ENDIF
+                    byte unkByte
+                ENDIF
+                IF petState == 4
+                    // Dead
+                    uint refObjID
+                    ascii petName
+                    IF ID4 == 2
+                        // ITEM_COS_P (Ability)
+                        uint petRentEndTime
+                    ENDIF
+                    byte unkByte
+                ENDIF
+            ENDIF
+            IF ID3 == 2
+                // ITEM_ETC_TRANS_MONSTER
+                uint refObjID
+            ENDIF
+            IF ID3 == 3
+                // MAGIC_CUBE
+                uint cubeQuantity
+            ENDIF
+        ENDIF
+        IF ID2 == 3
+            // ITEM_ETC
+            ushort quantity
+            IF ID3 == 1
+                IF ID4 == 1
+                    // Magic stone
+                    byte assimilationProbability
+                ENDIF
+                IF ID4 == 2
+                    // Attributte stone
+                    byte assimilationProbability
+                ENDIF
+            ENDIF
+            IF ID3 == 14
+                IF ID3 == 2
+                    // ITEM_MALL_GACHA_CARD_WIN
+                    // ITEM_MALL_GACHA_CARD_LOSE
+                    FOR byte
+                        uint magParam01
+                        uint magParam02
+                    ENDFOR
+                ENDIF
+            ENDIF
+        ENDIF
+    ENDIF
+ENDFOR
+byte AvatarInventorySize
+for byte
+// Avatar items
+endfor
+byte    unkByte1
+while byte == 1
+  uint masteryID
+  byte masteryLevel
+endwhile
+
+
+
+
+
+// etc ...
+

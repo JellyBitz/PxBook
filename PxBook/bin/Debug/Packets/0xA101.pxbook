@@ -1,0 +1,14 @@
+/// SERVER_GATEWAY_SHARD_LIST_RESPONSE
+// Taken as example JSRO
+while byte == 1
+    uint8 farmID
+    ascii farmName
+endwhile
+while byte == 1
+    ushort shardID
+    ascii serverName
+    uint16 online
+    ushort capacity
+    byte isActive
+    byte serverID_farmID
+endwhile

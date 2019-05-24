@@ -1,0 +1,24 @@
+v1.0.4
+- Removed line numbers from viewer
+- Fixed crash when script is not correct on pretty printting loader
+- Fixed ascii variable not reading when is an empty string
+- Fixed IF less than condition not displaying by viewer
+- Fixed data detection (hexdump & raw bytes)
+
+v1.0.3
+- Added a few packets to the library as examples
+- Fixed FOR and WHILE conditional while is in a bucle
+- Fixed packet structure viewer not showing the lastest variables added
+- Improved packet structure loader
+
+v1.0.2
+- Fixed IF conditional while is in a bucle
+- Fixed save & load issues
+- Fixed library viewer only displaying pxScripts if has description
+
+v1.0.1
+
+- Added more variables
+- Added comments to script viewer
+- Fixed Fonts
+- Minor Improvements to the GUI

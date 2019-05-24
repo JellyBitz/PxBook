@@ -1,0 +1,9 @@
+C:\Users\Luisana\Documents\Visual Studio 2015\Projects\PxBook\PxBook\bin\Debug\PxBook.exe.config
+C:\Users\Luisana\Documents\Visual Studio 2015\Projects\PxBook\PxBook\bin\Debug\PxBook.exe
+C:\Users\Luisana\Documents\Visual Studio 2015\Projects\PxBook\PxBook\bin\Debug\PxBook.pdb
+C:\Users\Luisana\Documents\Visual Studio 2015\Projects\PxBook\PxBook\obj\Debug\PxBook.Window.resources
+C:\Users\Luisana\Documents\Visual Studio 2015\Projects\PxBook\PxBook\obj\Debug\PxBook.Properties.Resources.resources
+C:\Users\Luisana\Documents\Visual Studio 2015\Projects\PxBook\PxBook\obj\Debug\PxBook.csproj.GenerateResource.Cache
+C:\Users\Luisana\Documents\Visual Studio 2015\Projects\PxBook\PxBook\obj\Debug\PxBook.exe
+C:\Users\Luisana\Documents\Visual Studio 2015\Projects\PxBook\PxBook\obj\Debug\PxBook.pdb
+C:\Users\Luisana\Documents\Visual Studio 2015\Projects\PxBook\PxBook\obj\Debug\PxBook.csprojResolveAssemblyReference.cache

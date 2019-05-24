@@ -1,0 +1,46 @@
+/// SERVER_AGENT_CHAT_UPDATE
+byte type
+if type == 1
+// All
+uint uniqueID
+endif
+if type == 2
+// Private
+ascii playerName
+endif
+if type == 3
+// GM
+uint uniqueID
+endif
+if type == 4
+// Party
+ascii playerName
+endif
+if type == 5
+// Guild
+ascii playerName
+endif
+if type == 6
+// Global
+ascii playerName
+endif
+if type == 7
+// Notice
+endif
+if type == 9
+// Stall
+ascii playerName
+endif
+if type == 11
+// Union
+ascii playerName
+endif
+if type == 13
+// NPC
+uint uniqueID
+endif
+if type == 16
+// Academy
+ascii playerName
+endif
+ascii message

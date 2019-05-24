@@ -21,7 +21,6 @@ Works with **raw of bytes** or **hexdumps** like this:
 0000000112   05 41 0E 00 00 00 42 0E 00 00 00 43 0E 00 00 00   .A....B....C....
 0000000128   34 0E 00 00 00 47 0E 00 00 00 00                  4....G..........
 ```
-
 #### Syntax
 - All conditions are handled strictly using at least one space between his data
 - Are not case sensitive
@@ -45,7 +44,6 @@ Works with **raw of bytes** or **hexdumps** like this:
 - `ascii32` : 4 + length
 
 ##### Script Example:
-
 ```
 // IF CONDITION!
 // read byte and save it at A
@@ -73,8 +71,6 @@ while byte == 1
     uint8 flag
 endwhile
 ```
-
-
 ###### Created on VisualStudio2015 with NET 4.5
 ------------
 > **Do you like this Project ?**
